@@ -1,0 +1,42 @@
+
+Report: Level 1 - Variable Identification Protocol
+
+---
+
+## Approach
+
+The analysis begins with the loading and initial inspection of a dataset using common data science libraries: `pandas`, `numpy`, `matplotlib`, and `seaborn`. The goal is to identify relevant features (Feature_1, Feature_2, Feature_3) for further analysis.
+
+Initial data exploration includes checking column data types, null values, and understanding the structure of the dataset using `df.info()` and `df.describe()`.
+
+---
+
+## Experimentation
+
+1. **Feature Visualization**:
+   - The distributions of `Feature_1`, `Feature_2`, and `Feature_3` are plotted using seaborn's `histplot` to understand the shape and spread of the data.
+
+2. **Correlation Analysis**:
+   - A correlation matrix is computed using `df.corr()` to find relationships between numerical variables.
+   - This matrix includes standard features like parental education, student grades (G1, G2, G3), and the three new features.
+
+3. **Descriptive Statistics**:
+   - The `df.describe()` function provides a detailed statistical summary (mean, std, min, max, quartiles) of all numeric columns, including the newly engineered features.
+
+---
+
+## Results
+
+- The histogram plots help visualize the distribution of new features, suggesting how they might relate to student performance.
+- Correlation analysis reveals:
+  - Strong positive correlations among G1, G2, and G3 grades.
+  - Negative correlation between number of failures and final grade (G3).
+  - Mixed correlations between the new features and student grades, suggesting potential for predictive modeling.
+- Descriptive stats show the range and distribution of the numerical variables, providing a basis for further preprocessing.
+
+---
+
+Conclusion:
+
+This notebook represents the first level of a data science pipeline—feature identification and initial exploratory data analysis. The analysis sets the foundation for deeper statistical modeling or machine learning applications in subsequent stages.
+
