@@ -144,10 +144,4 @@ The following aspects have already been addressed in the notebook:
 - ✅ Handling of missing values
 - ✅ Distribution analysis of synthetic features
 - ✅ Correlation analysis with academic and behavioral variables
-- ✅ Statistical summaries and insights
-
-To expand on this analysis, possible next steps could include:
-
-- Apply clustering or dimensionality reduction (e.g., PCA) to group student profiles.
-- Use predictive modeling (e.g., regression or classification) to estimate academic performance.
-- Evaluate causality or time-based trends if longitudinal data is available.
+- ✅ Statistical summaries and insights.
